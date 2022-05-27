@@ -67,13 +67,12 @@ table {
 
 /* || General */
 
-html * {
-	/* border: 1px solid red; */
+* {
+	box-sizing: border-box;
 }
 
 :root {
 	font-family: 'Questa_Sans_Regular';
-	box-sizing: border-box;
 }
 
 /* || Layout */
@@ -106,6 +105,13 @@ html * {
 	height: 100%;
 }
 
+.sidebar p {
+	color: white;
+	position: absolute;
+	bottom: 10px;
+	left: 40%;
+}
+
 /* || Form */
 
 .form-container {
@@ -117,8 +123,9 @@ form {
 }
 
 .card {
-	background-color: aqua;
+	background: linear-gradient(90deg, #6D9DC5, #474973);
 	padding: 20px 35% 0 40px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .caption {
@@ -149,6 +156,7 @@ form {
 
 legend {
 	font-size: 24px;
+	font-weight: bold;
 	font-family: 'Questa_Grande_Regular';
 	position: absolute;
 	top: 0;
@@ -159,6 +167,18 @@ fieldset {
 	position: relative;
 }
 
+input {
+	margin-top: 10px;
+	padding: 10px 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+input:focus {
+	border-bottom: 4px solid #474973;
+}
+
 /* || Button */
 
 button[type="submit"] {
@@ -167,6 +187,14 @@ button[type="submit"] {
 	margin-left: 40px;
 	padding: 10px 20px;
 	border-radius: 10px;
+	border: bevel;
+	background-color: #fff;
+	color: #000;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #E2E2E2;
 }
 
 /* || Footer */
@@ -174,4 +202,11 @@ button[type="submit"] {
 .login {
 	margin-left: 40px;
 	margin-top: 40px;
+	font-size: 16px;
+}
+
+.login a {
+	text-decoration: none;
+	color: #474973;
+	font-weight: bold;
 }
