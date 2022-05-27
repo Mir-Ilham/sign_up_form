@@ -47,13 +47,32 @@ table {
 	border-spacing: 0;
 }
 
+/* || Custom Fonts */
+
+@font-face {
+    font-family: 'Questa_Sans_Regular';
+    src: url('../fonts/questasans_regular_macroman/2-Questa_Sans_Regular-webfont.woff2') format('woff2'),
+         url('../fonts/questasans_regular_macroman/2-Questa_Sans_Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Questa_Grande_Regular';
+    src: url('../fonts/questagrande_regular_macroman/2-questa_grande_regular_31-webfont.woff2') format('woff2'),
+         url('../fonts/questagrande_regular_macroman/2-questa_grande_regular_31-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* || General */
 
 html * {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 
 :root {
+	font-family: 'Questa_Sans_Regular';
 	box-sizing: border-box;
 }
 
@@ -91,4 +110,68 @@ html * {
 
 .form-container {
 	flex: 1.5;
+}
+
+form {
+	margin-top: 40px;
+}
+
+.card {
+	background-color: aqua;
+	padding: 20px 35% 0 40px;
+}
+
+.caption {
+	margin-top: 15%;
+	font-family: 'Questa_Grande_Regular';
+	font-size: 28px;
+	padding: 0 25% 0 40px;
+}
+
+.caption p:nth-child(2) {
+	margin-top: 10px;
+}
+
+.input-row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+.input {
+	width: 45%;
+}
+
+.input * {
+	display: block;
+	width: 100%;
+}
+
+legend {
+	font-size: 24px;
+	font-family: 'Questa_Grande_Regular';
+	position: absolute;
+	top: 0;
+}
+
+fieldset {
+	padding: 50px 0 15px 0;
+	position: relative;
+}
+
+/* || Button */
+
+button[type="submit"] {
+	font-size: 18px;
+	margin-top: 30px;
+	margin-left: 40px;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+
+/* || Footer */
+
+.login {
+	margin-left: 40px;
+	margin-top: 40px;
 }
